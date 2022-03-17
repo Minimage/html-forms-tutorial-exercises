@@ -53,8 +53,8 @@
 							</select>
 						</td>
 					</tr>
-
-					<tr id="fourth">
+                    
+                    <tr id="fourth">
 						<td>
 							<p>Check all that apply</p>
 						</td>
@@ -64,15 +64,21 @@
 							<br />
 							<input type="checkbox" name="pounds" value="pounds" id="pounds" />
 							<label>Over 200 pounds </label>
-						</td>
+						</td>    
 					</tr>
-
-					<tr id="fifth">
-						<td colspan="2">
-							<p>Describe your athletic ability:</p>
-							<textarea cols="46" rows="7"></textarea>
-						</td>
-					</tr>
+                    
+                    <tr id="fifth">
+                        <td colspan="2">
+                            <p>Describe your athletic ability:</p>
+                            <textarea cols="46" rows="7"></textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr id="sixth">
+                        <td colspan="2">
+                            <button id="btn">Submit</button>
+                        </td>
+                    </tr>
 				</tbody>
 			</table>
 		</form>
@@ -81,21 +87,33 @@
 			thead {
 				background-color: cornflowerblue;
 			}
-
+            
+          
+            
 			table,
 			th,
 			td {
 				border: 1px solid black;
-				width: 400px;
+                width: 400px;
+
 			}
 
 			td:nth-of-type(-n + 1) {
 				background-color: beige;
 			}
+            
+            #fifth {
+                width:100%;
+            }
+            
+            #btn{
 
-			#fifth {
-				width: 100%;
-			}
+                width:150px;
+                margin-left: 30%;
+                height: 25px;
+            }
+            
+
 		</style>
 	</body>
 </html>
