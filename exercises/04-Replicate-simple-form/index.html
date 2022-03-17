@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>4Geeks Academy</title>
-</head>
-<body>
-<form>
-<!-- your code here -->
-</form>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>4Geeks Academy</title>
+	</head>
+	<body>
+		<form>
+			<!-- your code here -->
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr id="first">
+						<td>
+							<p>Names</p>
+						</td>
+						<td>
+							<input type="text" />
+						</td>
+					</tr>
+
+					<tr id="second">
+						<td>
+							<p>Sex</p>
+						</td>
+						<td>
+							<input type="radio" name="gender" id="Male" value="Male" />
+							<label>Male</label>
+							<br />
+
+							<input type="radio" name="gender" id="Female" value="Female" />
+							<label>Female</label>
+						</td>
+					</tr>
+
+					<tr id="third">
+						<td>
+							<p>Eye Color</p>
+						</td>
+
+						<td>
+							<select>
+								<option value="green" id="green">green</option>
+								<option value="blue" id="blue">blue</option>
+								<option value="hazel" id="hazel">hazel</option>
+								<option value="brown" id="brown">brown</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr id="fourth">
+						<td>
+							<p>Check all that apply</p>
+						</td>
+						<td>
+							<input type="checkbox" name="6ft" value="6ft" id="6ft" />
+							<label>Over 6 feet tall</label>
+							<br />
+							<input type="checkbox" name="pounds" value="pounds" id="pounds" />
+							<label>Over 200 pounds </label>
+						</td>
+					</tr>
+
+					<tr id="fifth">
+						<td colspan="2">
+							<p>Describe your athletic ability:</p>
+							<textarea cols="46" rows="7"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+
+		<style>
+			thead {
+				background-color: cornflowerblue;
+			}
+
+			table,
+			th,
+			td {
+				border: 1px solid black;
+				width: 400px;
+			}
+
+			td:nth-of-type(-n + 1) {
+				background-color: beige;
+			}
+
+			#fifth {
+				width: 100%;
+			}
+		</style>
+	</body>
 </html>
